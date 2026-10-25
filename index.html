@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kacey Solis — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;500;600;700&family=Sometype+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <!-- Header: full nav on desktop, hamburger + menu panel on tablet/mobile -->
+  <header class="header" id="header">
+    <div class="header__bar">
+      <a class="logo" href="#top">kacey.</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="archive.html">Archive</a>
+      </nav>
+      <a class="link-arrow contact" href="#send-email">
+        <span class="inner">
+          <span class="label">Contact Me</span>
+          <svg viewBox="0 0 13 13" fill="none" stroke="#121212" stroke-width="1.5" aria-hidden="true"><path d="M1 12 12 1M3.5 1H12v8.5"/></svg>
+        </span>
+        <span class="rule"></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="icon-burger" width="16" height="11" viewBox="0 0 16 11" fill="none" stroke="#121212" stroke-width="1.5" aria-hidden="true"><path d="M0 1h16M0 5.5h16M0 10h16"/></svg>
+        <svg class="icon-close" width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="#121212" stroke-width="1.5" aria-hidden="true"><path d="M1 1l9 9M10 1l-9 9"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__links">
+          <a href="#about">About Me</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="archive.html">Archive</a>
+          <a class="mobile-menu__contact" href="#send-email">
+            <span>Contact Me
+              <svg viewBox="0 0 10 10" fill="none" stroke="#121212" stroke-width="1.4" aria-hidden="true"><path d="M1 9 9 1M3 1H9v6"/></svg>
+            </span>
+            <i></i>
+          </a>
+        </div>
+        <div class="mobile-menu__foot">
+          <div class="mobile-menu__social">
+            <a href="#linkedin">LinkedIn</a><a href="#github">Github</a><a href="#facebook">Facebook</a>
+          </div>
+          <p class="mobile-menu__copy">© 2026 Kacey Solis</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <div class="stage stage--hero" id="top">
+      <section class="frame hero" data-node-id="3:2">
+        <div class="intro">
+          <div class="name">
+            <p>KACEY&nbsp;</p>
+            <p>SOLIS</p>
+          </div>
+          <div class="roles">
+            <p>GRAPHIC DESIGN</p>
+            <p>WEB DESIGN (UI/UX)</p>
+            <p>FRONT-END DEVELOPMENT</p>
+          </div>
+          <p class="hello">Hello, I’m</p>
+        </div>
+
+        <div class="picture">
+          <img src="assets/picture.png" alt="Portrait of Kacey Solis">
+        </div>
+
+        <a class="cta" href="#what-i-do">View my work</a>
+
+        <div class="socials">
+          <a class="link-arrow" href="#linkedin"><span class="inner"><span class="label">linkedin</span><svg viewBox="0 0 10 10" fill="none" stroke="#121212" stroke-width="1.2" aria-hidden="true"><path d="M1 9 9 1M3 1H9v6"/></svg></span><span class="rule" style="width:90px"></span></a>
+          <a class="link-arrow" href="#github"><span class="inner"><span class="label">github</span><svg viewBox="0 0 10 10" fill="none" stroke="#121212" stroke-width="1.2" aria-hidden="true"><path d="M1 9 9 1M3 1H9v6"/></svg></span><span class="rule" style="width:73px"></span></a>
+          <a class="link-arrow" href="#facebook"><span class="inner"><span class="label">facebook</span><svg viewBox="0 0 10 10" fill="none" stroke="#121212" stroke-width="1.2" aria-hidden="true"><path d="M1 9 9 1M3 1H9v6"/></svg></span><span class="rule" style="width:91px"></span></a>
+        </div>
+      </section>
+    </div>
+
+    <!-- What I Do -->
+    <div class="stage stage--what" id="what-i-do">
+      <section class="frame what" data-node-id="22:81">
+        <div class="what__content">
+          <h2 class="what__title">WHAT I DO</h2>
+          <div class="what__cards">
+            <article class="card">
+              <svg class="card__close" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" aria-hidden="true"><path d="M3 3 21 21M21 3 3 21"/></svg>
+              <div class="card__head"><p class="card__num">01</p><h3 class="card__title"><span>Graphic</span><span>Design</span></h3></div>
+              <div class="card__body"><p class="card__text">I design with intention and put together visual assets, posters, and brand elements using grids, balanced typography, and high contrast.</p><div class="tags"><div class="tags__row"><span class="tag">Layout Design</span><span class="tag">Posters</span></div><div class="tags__row"><span class="tag">Visual Identity</span></div></div></div>
+            </article>
+            <article class="card">
+              <svg class="card__close" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" aria-hidden="true"><path d="M3 3 21 21M21 3 3 21"/></svg>
+              <div class="card__head"><p class="card__num">02</p><h3 class="card__title"><span>Web</span><span>Design</span></h3></div>
+              <div class="card__body"><p class="card__text">I design user flows, wireframes, and prototypes in Figma that actually make sense to navigate. I focus on clean and accessible interfaces that feel intuitive.</p><div class="tags"><div class="tags__row"><span class="tag">Figma</span><span class="tag">Wireframing</span></div><div class="tags__row tags__row--wide"><span class="tag">User Flow</span><span class="tag">Prototyping</span></div></div></div>
+            </article>
+            <article class="card">
+              <svg class="card__close" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3" aria-hidden="true"><path d="M3 3 21 21M21 3 3 21"/></svg>
+              <div class="card__head"><p class="card__num">03</p><h3 class="card__title"><span>Front-End</span><span>Development</span></h3></div>
+              <div class="card__body"><p class="card__text">I build what I design. I turn prototypes into usable and responsive websites that work properly across desktop and mobile screens.</p><div class="tags"><div class="tags__row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Javascript</span></div><div class="tags__row"><span class="tag">Responsive Layouts</span></div></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Me & Experience -->
+    <div class="stage stage--about">
+      <section class="frame about-exp" data-node-id="27:181">
+        <div class="fx" aria-hidden="true">
+          <svg class="fx__x fx__x--edge" style="--x:2.4%;--y:12%;--z:14px;--o:0.22;--dx:10px;--dy:38px;--r:90deg;--d:19s;--dl:-3s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--edge" style="--x:95.6%;--y:9%;--z:16px;--o:0.2;--dx:-10px;--dy:44px;--r:-120deg;--d:23s;--dl:-9s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--mid" style="--x:30%;--y:21%;--z:12px;--o:0.16;--dx:26px;--dy:-22px;--r:180deg;--d:21s;--dl:-6s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--mid" style="--x:13%;--y:27.5%;--z:20px;--o:0.14;--dx:-24px;--dy:30px;--r:120deg;--d:26s;--dl:-12s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--mid" style="--x:87%;--y:29%;--z:14px;--o:0.18;--dx:22px;--dy:-34px;--r:-90deg;--d:18s;--dl:-2s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--edge" style="--x:96%;--y:40%;--z:16px;--o:0.2;--dx:-10px;--dy:36px;--r:140deg;--d:24s;--dl:-14s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--edge" style="--x:3.6%;--y:58%;--z:18px;--o:0.16;--dx:12px;--dy:-40px;--r:-150deg;--d:27s;--dl:-8s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--mid" style="--x:50%;--y:66.5%;--z:14px;--o:0.14;--dx:34px;--dy:20px;--r:90deg;--d:22s;--dl:-5s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--mid" style="--x:14%;--y:75%;--z:18px;--o:0.15;--dx:-26px;--dy:-26px;--r:160deg;--d:25s;--dl:-11s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--mid" style="--x:88%;--y:74%;--z:12px;--o:0.17;--dx:24px;--dy:28px;--r:-110deg;--d:20s;--dl:-1s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+          <svg class="fx__x fx__x--edge" style="--x:95%;--y:86%;--z:14px;--o:0.18;--dx:-10px;--dy:-34px;--r:100deg;--d:23s;--dl:-16s" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M1.5 1.5 8.5 8.5M8.5 1.5 1.5 8.5"/></svg>
+        </div>
+
+        <div class="statement">
+          <p class="statement__eyebrow">Something about me?</p>
+          <h2 class="statement__title" data-reveal>
+            <span class="line">Designing intuitive interfaces,</span>
+            <span class="line line--muted">Driven by data,</span>
+            <span class="line">Curious about the cloud.</span>
+          </h2>
+        </div>
+
+        <div class="rule-h rule-h--top"></div>
+        <div class="rule-h rule-h--bottom"></div>
+        <div class="rule-v rule-v--left"></div>
+        <svg class="mark-x" viewBox="0 0 22 22" fill="none" stroke="#fff" stroke-width="2.5" aria-hidden="true"><path d="M4 4 18 18M18 4 4 18"/></svg>
+
+        <div class="about" id="about">
+          <header class="section-head">
+            <p class="section-head__num">01</p>
+            <h2 class="section-head__title js-split" data-split>ABOUT ME</h2>
+          </header>
+
+          <div class="about__row">
+            <div class="about__photo">
+              <!-- Export node 27:185 from Figma to assets/about.png -->
+              <img src="assets/about.png" alt="Kacey Solis seated in a director’s chair">
+            </div>
+            <div class="about__who">
+              <div class="subhead"><h3 class="subhead__text">Kacey Solis</h3><svg class="subhead__arrow" viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M2 2 16 16M16 5v11H5"/></svg></div>
+              <div class="about__bio"><p>I’m an IT student and <strong>UI/UX &amp; graphic designer</strong> based in Quezon City. I have a genuine love for creative work and using it to solve problems for others.</p><p>&#8203;</p><p>I’m always working to improve my craft, learn from experience, and learn how to design with real empathy for the user.</p></div>
+              <a class="btn-glass" href="more-about-me.html">More about me</a>
+            </div>
+          </div>
+
+          <div class="about__stacks">
+          <div class="stack">
+            <div class="subhead"><h3 class="subhead__text">Tech Stack</h3><svg class="subhead__arrow" viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M2 2 16 16M16 5v11H5"/></svg></div>
+            <div class="chips">
+              <div class="chips__row"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span><span class="chip">R</span></div>
+              <div class="chips__row"><span class="chip">MySQL</span><span class="chip">PostgreSQL</span></div>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="subhead"><h3 class="subhead__text">Tools I Use</h3><svg class="subhead__arrow" viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M2 2 16 16M16 5v11H5"/></svg></div>
+            <div class="chips chips--tools">
+              <div class="chips__row"><span class="chip">Github</span><span class="chip">Figma</span><span class="chip">FigJam</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">Kiro</span><span class="chip">VS Code</span></div>
+              <div class="chips__row"><span class="chip">Eclipse</span><span class="chip">JetBrains IntelliJ</span><span class="chip">Notion</span><span class="chip">Adobe Ps</span><span class="chip">Adobe Ai</span><span class="chip">Adobe Lr</span></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="experience" id="experience">
+          <div class="experience__top">
+            <div class="experience__head">
+              <p class="section-head__num">02</p>
+              <div class="experience__titles">
+                <h2 class="section-head__title js-split" data-split>EXPERIENCE</h2>
+                <p class="experience__sub">Leadership &amp; Activities</p>
+              </div>
+            </div>
+            <div class="exp-list">
+              <div class="exp-row"><div class="exp-row__main"><p class="exp-row__date">Oct 2026 - Present</p><p class="exp-row__role">UI/UX Designer</p></div><p class="exp-row__org">AWS Skill Builder Group PUP</p></div>
+              <div class="exp-row"><div class="exp-row__main"><p class="exp-row__date">Sep 2026 - Present</p><p class="exp-row__role">Sponsors Lead</p></div><p class="exp-row__org">Cisco NetConnect PUP</p></div>
+              <div class="exp-row"><div class="exp-row__main"><p class="exp-row__date">Aug 2026 - Present</p><p class="exp-row__role">UI/UX Associate</p></div><p class="exp-row__org">Seekers Guild</p></div>
+              <div class="exp-row"><div class="exp-row__main"><p class="exp-row__date">Aug 2026 - Present</p><p class="exp-row__role">AI Intern - UX/UI</p></div><p class="exp-row__org">FlyRank AI</p></div>
+              <div class="exp-row"><div class="exp-row__main"><p class="exp-row__date">Mar 2026 - <br class="date-br">Sep 2026</p><p class="exp-row__role">UI/UX Designer</p></div><p class="exp-row__org">AWS Community Day 2026</p></div>
+            </div>
+          </div>
+          <a class="btn-glass" href="full-history.html">Full History</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Projects · Certifications · Contact -->
+    <section class="proj" id="projects">
+      <div class="proj__in">
+
+        <div class="proj__top">
+          <header class="proj__head">
+            <p class="proj__num">03</p>
+            <h2 class="proj__title js-split" data-split>PROJECTS</h2>
+          </header>
+
+          <div class="folders-track" id="folders-track">
+            <div class="folders-pin">
+        <article class="folder f1 reveal-tab" data-i="1"
+          style="--z:1;--tl:0;--tw:287.673;--lo:41;--bc:#f9ab00;--tf:#121212;--bg:linear-gradient(to bottom,#121212 24.507%,#787878 153.04%);--tg:linear-gradient(90deg,#f90,#e4c18d)">
+          <div class="folder__body">
+            <i class="folder__line folder__line--t"></i><i class="folder__line folder__line--b"></i>
+            <div class="folder__content">
+              <div class="art art--aws"><img class="art__tile" src="assets/awscd.png" alt="AWS Community Day logo"></div>
+              <div class="folder__text">
+                <div class="folder__head">
+                  <div class="folder__titles">
+                    <a class="folder__title" href="https://community.awsug.ph/2026/manila.html" target="_blank" rel="noopener"><span class="folder__title-text">AWS Community Day 2026</span><svg class="folder__go" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 13 13 2M4.5 2H13v10"/></svg></a>
+                    <p class="folder__sub">Official Website</p>
+                  </div>
+                  <p class="folder__role"><b>Role:</b> UI/UX Designer</p>
+                </div>
+                <div class="folder__panel"><ul class="folder__list"><li>Co-designed the official event website and automated certificate generator app used by 800+ AWS Community Day Philippines 2026 attendees.</li><li>Reviewed and refined web app interface layouts and user flows to keep navigation clean, intuitive, and easy to use.</li><li>Worked directly with my co-designer and event organizers to align the website with the official AWSUG branding.</li></ul></div>
+              </div>
+            </div>
+          </div>
+          <svg class="folder__tab" viewBox="0 0 287.673 67" preserveAspectRatio="none" aria-hidden="true"><path class="tab-fill" d="M1 67 L1 7 Q1 1 7 1 L248.673 1 Q254.673 1 257.673 5 L286.673 67 Z"/><path class="tab-line" d="M1 67 L1 7 Q1 1 7 1 L248.673 1 Q254.673 1 257.673 5 L286.673 67"/></svg>
+          <button class="folder__label" type="button" aria-label="Bring Project 01 to the front">Project 01</button>
+        </article>
+        <article class="folder f2 reveal-tab" data-i="2"
+          style="--z:2;--tl:191;--tw:316.43;--lo:69;--bc:#407ad8;--tf:#3e3e3e;--bg:linear-gradient(to bottom,#3e3e3e,#000 142.02%);--tg:linear-gradient(90deg,#4285f4 0%,#ea4335 38%,#fbbc04 68%,#34a853 100%)">
+          <div class="folder__body">
+            <i class="folder__line folder__line--t"></i><i class="folder__line folder__line--b"></i>
+            <div class="folder__content">
+              <div class="folder__text">
+                <div class="folder__head">
+                  <div class="folder__titles">
+                    <a class="folder__title" href="https://gdgpup.org/" target="_blank" rel="noopener"><span class="folder__title-text">GDG PUP NEXUS</span><svg class="folder__go" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 13 13 2M4.5 2H13v10"/></svg></a>
+                    <p class="folder__sub">Official Website</p>
+                  </div>
+                  <p class="folder__role"><b>Roles:</b> Technical Designer and Design QA</p>
+                </div>
+                <div class="folder__panel"><ul class="folder__list"><li>Co-designed the GDG on Campus PUP Nexus website and collaborated closely with fellow designers and contributors throughout the project.</li><li>Handled the initial planning, site structure, and user flows alongside fellow team heads to establish a clear direction before designing.</li><li>Did design QA and guided team contributors on layouts and components to keep every screen consistent and aligned with GDG PUP’s official branding.</li></ul></div>
+              </div>
+              <div class="art art--gdg"><img class="art__tile" src="assets/gdg.png" alt="GDG on Campus PUP Nexus"></div>
+            </div>
+          </div>
+          <svg class="folder__tab" viewBox="0 0 316.43 67" preserveAspectRatio="none" aria-hidden="true"><path class="tab-fill" d="M1 67 L25 7 Q27 1 34 1 L277.43 1 Q283.43 1 286.43 5 L315.43 67 Z"/><path class="tab-line" d="M1 67 L25 7 Q27 1 34 1 L277.43 1 Q283.43 1 286.43 5 L315.43 67"/></svg>
+          <button class="folder__label" type="button" aria-label="Bring Project 02 to the front">Project 02</button>
+        </article>
+        <article class="folder f3 reveal-tab folder--center" data-i="3"
+          style="--z:3;--tl:351;--tw:316.43;--lo:67;--bc:#ef4438;--tf:#121212;--bg:linear-gradient(to bottom,#121212 24.507%,#787878 153.04%);--tg:linear-gradient(90deg,#ef4438,#f6b934)">
+          <div class="folder__body">
+            <i class="folder__line folder__line--t"></i><i class="folder__line folder__line--b"></i>
+            <div class="folder__content">
+              <div class="art art--isk"><img class="art__tile" src="assets/iskount.png" alt="PUP IsKount logo"></div>
+              <div class="folder__text">
+                <div class="folder__head">
+                  <div class="folder__titles">
+                    <a class="folder__title" href="pup-iskount.html"><span class="folder__title-text">PUP IsKount</span><svg class="folder__go" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 13 13 2M4.5 2H13v10"/></svg></a>
+                    <p class="folder__sub">Mobile App Prototype</p>
+                  </div>
+                  <p class="folder__role"><b>Role:</b> UI/UX Designer</p>
+                </div>
+                <div class="folder__panel"><ul class="folder__list"><li>Owned the end-to-end design for an HCI course project, taking user research data from teammates to map out user journeys and site structure.</li><li>Designed and tested low-to-high fidelity wireframes focused on making student expense tracking straightforward and uncluttered.</li><li>Built a fully interactive high-fidelity prototype in Figma for presentation.</li></ul></div>
+              </div>
+            </div>
+          </div>
+          <svg class="folder__tab" viewBox="0 0 316.43 67" preserveAspectRatio="none" aria-hidden="true"><path class="tab-fill" d="M1 67 L25 7 Q27 1 34 1 L277.43 1 Q283.43 1 286.43 5 L315.43 67 Z"/><path class="tab-line" d="M1 67 L25 7 Q27 1 34 1 L277.43 1 Q283.43 1 286.43 5 L315.43 67"/></svg>
+          <button class="folder__label" type="button" aria-label="Bring Project 03 to the front">Project 03</button>
+        </article>
+        <article class="folder f4 reveal-tab folder--center" data-i="4"
+          style="--z:4;--tl:535;--tw:316.43;--lo:71;--bc:#ffffff;--tf:#3e3e3e;--bg:linear-gradient(to bottom,#3e3e3e 24.507%,#121212 153.04%);--tg:linear-gradient(90deg,#8a38f5,#fff)">
+          <div class="folder__body">
+            <i class="folder__line folder__line--t"></i><i class="folder__line folder__line--b"></i>
+            <div class="folder__content">
+              <div class="folder__text">
+                <div class="folder__head">
+                  <div class="folder__titles">
+                    <a class="folder__title" aria-disabled="true"><span class="folder__title-text">MARITES</span><svg class="folder__go" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 13 13 2M4.5 2H13v10"/></svg></a>
+                    <p class="folder__sub">Mobile App Prototype</p>
+                  </div>
+                  <p class="folder__role"><b>Role:</b> Lead UI/UX Designer</p>
+                </div>
+                <div class="folder__panel"><ul class="folder__list"><li>Led the UX design direction for a UNESCO hackathon entry, including mapping core user flows and building low-fidelity concepts under tight deadlines.</li><li>Guided teammates through UI execution and assembled an interactive high-fidelity prototype demonstrating the key product solution.</li><li>Organized and styled reusable UI components in Figma to keep visual elements and microcopy consistent across all screens.</li></ul></div>
+              </div>
+              <div class="art art--mar"><img class="art__tile" src="assets/marites.png" alt="Marites logo"></div>
+            </div>
+          </div>
+          <svg class="folder__tab" viewBox="0 0 316.43 67" preserveAspectRatio="none" aria-hidden="true"><path class="tab-fill" d="M1 67 L25 7 Q27 1 34 1 L277.43 1 Q283.43 1 286.43 5 L315.43 67 Z"/><path class="tab-line" d="M1 67 L25 7 Q27 1 34 1 L277.43 1 Q283.43 1 286.43 5 L315.43 67"/></svg>
+          <button class="folder__label" type="button" aria-label="Bring Project 04 to the front">Project 04</button>
+        </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs" id="certifications">
+          <header class="certs__head">
+            <h2 class="certs__title js-split" data-split>CERTIFICATIONS</h2>
+            <p class="certs__sub">Course Credentials</p>
+          </header>
+          <div class="certs__grid">
+            <article class="cert cert--1">
+              <div class="cert__top">
+                <div class="cert__logo cert__logo--dc" role="img" aria-label="DataCamp logo"></div>
+                <div class="cert__text cert__text--narrow">
+                  <h3 class="cert__title">AWS Cloud Practitioner<br>(CLF-C02)</h3>
+                  <p class="cert__org">DataCamp</p>
+                </div>
+              </div>
+              <a class="btn-dark btn-dark--sm" href="https://www.datacamp.com/completed/statement-of-accomplishment/track/0933173fcce1f3b0feefa9d5052025cf4748b4e5?utm_medium=organic_social&amp;utm_campaign=sharewidget&amp;utm_content=soa" target="_blank" rel="noopener">Show credentials</a>
+            </article>
+            <article class="cert cert--2">
+              <div class="cert__top">
+                <div class="cert__logo cert__logo--g" role="img" aria-label="Google logo"></div>
+                <div class="cert__text">
+                  <h3 class="cert__title">UX Design Professional</h3>
+                  <p class="cert__org">Google</p>
+                  <p class="cert__org">Ongoing: 3/8 Courses</p>
+                </div>
+              </div>
+              <a class="btn-dark btn-dark--sm" href="https://www.linkedin.com/in/kaceymichaelasolis/details/certifications/" target="_blank" rel="noopener">Show credentials</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="cta-block" id="send-email">
+          <div class="cta-block__text">
+            <h2 class="cta-block__title">LET’S START THE CONVERSATION</h2>
+            <p class="cta-block__sub">Have a project in mind? Want to collaborate?</p>
+          </div>
+          <a class="btn-dark" href="mailto:kaceysolis13@gmail.com">Send an Email</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__cols">
+          <div class="footer__col footer__col--nav">
+            <p class="footer__label">Navigation</p>
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="archive.html">Archive</a>
+          </div>
+          <div class="footer__col footer__col--social">
+            <p class="footer__label">Social</p>
+            <a href="#linkedin">LinkedIn</a>
+            <a href="#github">Github</a>
+            <a href="#facebook">Facebook</a>
+          </div>
+        </div>
+        <div class="footer__col footer__col--email">
+          <p class="footer__label">Email</p>
+          <a href="mailto:kaceysolis13@gmail.com">kaceysolis13@gmail.com</a>
+        </div>
+        <div class="footer__col footer__col--copy">
+          <p class="footer__label">Copyright</p>
+          <p>© 2026 Kacey Solis</p>
+        </div>
+      </div>
+      <p class="footer__name">KACEY SOLIS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
