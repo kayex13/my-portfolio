@@ -916,7 +916,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 
 /* ---------- tablet ---------- */
 @media (max-width: 1024px) {
-  .more { padding: calc(var(--hdr) + 52px) var(--pad) 100px; }
+  .more { height: auto; padding: calc(var(--hdr) + 52px) var(--pad) 100px; }
   .more__content { position: static; width: 100%; gap: 96px; }
   .more__main { gap: 72px; }
   .more__about { gap: 56px; }
@@ -1497,6 +1497,57 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .isk .isk__approach { align-items: flex-start; gap: calc(40 * var(--u)); }
   .isk .isk__approach-text { max-width: calc(328 * var(--u)); gap: calc(20 * var(--u)); }
   .isk .isk__success { width: calc(219 * var(--u)); height: calc(237 * var(--u)); aspect-ratio: auto; }
+}
+
+
+/* MOBILE — More About Me page (Figma 148:772) */
+.more__mbr, .more__mob, .more__beyond-title--m { display: none; }
+@media (max-width: 600px) {
+  .more {
+    height: auto; padding: calc(146 * var(--u)) calc(32 * var(--u)) calc(70 * var(--u));
+    background: linear-gradient(176.508deg, #121212 95.847%, #fff 130.71%);
+  }
+  .more .more__mbr, .more .more__mob { display: inline; }
+  .more .more__dsk { display: none; }
+  .more__content { width: 100%; gap: calc(120 * var(--u)); }
+  .more__main { gap: calc(55 * var(--u)); }
+  .more__about { gap: calc(55 * var(--u)); }
+  .more__title { height: auto; font-size: calc(56 * var(--u)); line-height: calc(84 * var(--u)); letter-spacing: -0.03em; }
+
+  .more__row { flex-direction: column; align-items: stretch; gap: calc(55 * var(--u)); }
+  .more__photo { order: -1; width: 100%; max-width: none; margin: 0; height: auto; aspect-ratio: 1361 / 1554; }
+  .more__who { flex: none; width: 100%; gap: calc(25 * var(--u)); }
+  .more .btn-glass {
+    align-self: flex-start; font-size: calc(14 * var(--u)); line-height: normal; letter-spacing: -0.03em;
+    padding: calc(10 * var(--u)) calc(20 * var(--u)); border-radius: calc(10 * var(--u));
+  }
+
+  .more__edu { gap: calc(25 * var(--u)); }
+  .more__edu-body { gap: calc(20 * var(--u)); }
+  .more__edu-row { flex-direction: column; align-items: flex-start; gap: calc(15 * var(--u)); }
+  .more__edu-main { flex: none; width: 100%; gap: calc(15 * var(--u)); }
+  .more__school { font-size: calc(24 * var(--u)); line-height: 1.2; letter-spacing: -0.03em; }
+  .more__degree, .more__years, .more__scholar { font-size: calc(16 * var(--u)); line-height: 1.19; letter-spacing: -0.03em; }
+
+  .more__beyond { gap: calc(60 * var(--u)); align-items: stretch; }
+  .more__beyond-head { width: 100%; min-width: 0; height: calc(195 * var(--u)); gap: calc(5 * var(--u)); justify-content: center; }
+  .more__beyond-title--d { display: none; }
+  .more__beyond-title--m { display: block; }
+  .more__beyond-title--m > span { display: block; }
+  .more__beyond-title { height: auto; white-space: normal; font-size: calc(56 * var(--u)); line-height: 1.2; letter-spacing: -0.03em; }
+  .more__beyond-sub { flex: 1; height: auto; font-size: calc(20 * var(--u)); line-height: 1.19; letter-spacing: -0.03em; }
+
+  .more__events { gap: calc(70 * var(--u)); }
+  .more__event { min-height: calc(499.614 * var(--u)); justify-content: center; gap: calc(30 * var(--u)); }
+  .more__event .more__img--b { width: calc(323 * var(--u)); height: calc(215 * var(--u)); aspect-ratio: auto; }
+  .more__etext { gap: calc(20 * var(--u)); }
+  .more__etitle { display: block; white-space: nowrap; font-size: calc(24 * var(--u)); line-height: 1.2; letter-spacing: -0.03em; }
+  .more__etitle > .more__go { display: inline-block; margin-left: calc(15 * var(--u)); vertical-align: middle; }
+  .more__etitle-stack { gap: calc(5 * var(--u)); }
+  .more__etitle-line { gap: calc(15 * var(--u)); }
+  .more__event:first-child .more__etitle { line-height: calc(33.8 * var(--u)); margin: calc(-2.5 * var(--u)) 0; }   /* two lines + the 5px gap Figma puts between them */
+  .more__go { width: calc(8 * var(--u)); height: calc(8 * var(--u)); stroke-width: 2; }
+  .more__epara { font-size: calc(14 * var(--u)); line-height: 1.19; letter-spacing: -0.03em; text-align: justify; }
 }
 
 
