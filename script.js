@@ -6,13 +6,12 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var TABLET_MAX = 1024;
 
-  /* ---------- Desktop scaling (frames are designed at 1440px) ---------- */
+  /* ---------- Desktop scaling ---------- */
   function fit() {
     root.style.setProperty('--s', root.clientWidth / 1440);
     fitAuto();
   }
 
-  // frames whose height depends on their content (Experience page): size the stage to match
   function fitAuto() {
     var stages = document.querySelectorAll('.stage--auto');
     for (var i = 0; i < stages.length; i++) {
@@ -39,9 +38,9 @@
     if (e.key === 'Escape') setMenu(false);
   });
 
-  /* ---------- Scroll-linked word reveal ("Designing intuitive interfaces…") ---------- */
-  var MIN_OPACITY = 0.04;  // very dim starting opacity so the fade is obvious
-  var SPREAD = 5;          // how many words are mid-fade at the same time
+  /* ---------- Scroll-linked word reveal ---------- */
+  var MIN_OPACITY = 0.04;  
+  var SPREAD = 5;          
 
   var revealBlocks = [].slice.call(document.querySelectorAll('[data-reveal]')).map(function (el) {
     var words = [];
@@ -66,11 +65,11 @@
     var vh = window.innerHeight;
     revealBlocks.forEach(function (b) {
       var rect = b.el.getBoundingClientRect();
-      // 0 while the block is still below ~85% of the screen, 1 once its top reaches ~30%
+      
       var p = clamp01((vh * 0.85 - rect.top) / (vh * 0.55));
       var n = b.words.length;
       b.words.forEach(function (w, i) {
-        // each word starts fading a little after the previous one
+        
         var t = clamp01((p * (n + SPREAD) - i) / SPREAD);
         w.style.opacity = (MIN_OPACITY + (1 - MIN_OPACITY) * t).toFixed(3);
       });
@@ -78,7 +77,7 @@
   }
 
 
-  /* ---------- Reveal-on-scroll: letters, blocks, folders (tablet/mobile) ---------- */
+  /* ---------- Reveal-on-scroll ---------- */
   function splitLetters(el) {
     var text = el.textContent.trim();
     el.setAttribute('aria-label', text);
@@ -134,8 +133,7 @@
 
   var revealTargets = [].slice.call(document.querySelectorAll('.reveal, .reveal-wipe, .reveal-tab, .reveal-pop, .split'));
   if ('IntersectionObserver' in window) {
-    // clipped elements (the photo wipe) are observed through their parent, since a
-    // fully clipped element never reports as "visible"
+    
     var observed = new Map();
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -154,7 +152,6 @@
     revealTargets.forEach(function (el) { el.classList.add('is-in'); });
   }
 
-  /* ---------- Stat numbers count up when they scroll into view (PUP IsKount) ---------- */
   var counters = [].slice.call(document.querySelectorAll('[data-count]'));
   function fmtCount(el, v) {
     return v.toFixed(+el.getAttribute('data-dec') || 0) + (el.getAttribute('data-suffix') || '');
@@ -181,12 +178,12 @@
     counters.forEach(function (el) { el.textContent = fmtCount(el, 0); cio.observe(el); });
   }
 
-  /* ---------- Projects: folders slide up one by one as you scroll ---------- */
+  /* ---------- Projects ---------- */
   var track = document.getElementById('folders-track');
   var tabletMQ = window.matchMedia('(max-width: ' + TABLET_MAX + 'px)');
-  var FOLDER_H = 675;      // design height of one folder (incl. tab)
-  var MOVE = 0.7;          // share of each step spent moving (rest = a pause so it can be read / clicked)
-  var STEP_VH = 0.8;       // scroll distance per folder, in viewport heights
+  var FOLDER_H = 675;      
+  var MOVE = 0.7;          
+  var STEP_VH = 0.8;       
   var folders = track ? [].slice.call(track.querySelectorAll('.folder')) : [];
   var geo = { step: 1, pinTop: 0, travel: 0 };
 
@@ -202,7 +199,7 @@
     var s = root.clientWidth / 1440;
     var pinTop = Math.round(header.getBoundingClientRect().height + 12);
     var avail = window.innerHeight - pinTop - 12;
-    var fs = Math.max(0.3, Math.min(s, avail / FOLDER_H));   // fit the whole stack on screen
+    var fs = Math.max(0.3, Math.min(s, avail / FOLDER_H));   
     var steps = folders.length - 1;
     geo.step = window.innerHeight * STEP_VH;
     geo.pinTop = pinTop;
@@ -238,7 +235,7 @@
     });
   }
 
-  /* ---------- Experience timeline: the centre line draws itself as you scroll ---------- */
+  /* ---------- Experience timeline ---------- */
   var tl = document.getElementById('tl');
   var tlFill = tl ? tl.querySelector('.tl__fill') : null;
   var tlRows = tl ? [].slice.call(tl.querySelectorAll('.tl__row')) : [];
